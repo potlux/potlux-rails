@@ -1,0 +1,7 @@
+<% if messages %>
+    <div class="flash-messages-container">
+        <% messages.each do |message| %>
+            <div class="flash-message"><%= message %></div>
+        <% end %>
+    </div>
+<% end %>

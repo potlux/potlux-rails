@@ -1,0 +1,784 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ body, html {
+    height: 100%;
+}
+
+select {
+   background: #DDD;
+   border:none;
+   padding: 0 10px 0 10px;
+   margin: 0 15px 0 10px;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   height: 30px;
+   line-height: 30px;
+   border-radius: 5px;
+   font-size: 12px;
+}
+
+select ul li {
+    background: #4e2e27;
+}
+
+a, a:link{
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.errors {
+    list-style-type: none;
+    color: #F63B30;
+}
+
+.ppldescrip {
+    padding: 30px 20px 30px 20px;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.vertcent {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.spacer {
+    font-size: 5px;
+    line-height: 5px;
+}
+
+.formtd {
+    padding-right: 8px;
+    font-weight: 200;
+    font-size:12px;
+}
+
+.submitBubble {
+    width: 300px;
+    background: #DDD;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+}
+
+.editBubbly {
+    width: 150px;
+    background: #DDD;
+    border: none;
+    padding: 2px 10px 2px 10px;
+    border-radius: 5px;
+    font-size:12px;
+}
+
+.register {
+    padding-top:50px;
+    padding-left:50px;
+}
+
+#remember {
+    margin-bottom: 10px;
+}
+
+.alert-warning {
+    background-image: none;
+}
+
+.alert-danger {
+    background-image: none;
+}
+
+.contactBubble {
+    width: 148px;
+    background: #DDD;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+}
+
+.sortSearch {
+    padding-top:20px;
+    color: #4e4e4e;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.rememberme {
+    padding-top: 10px;
+}
+
+.summBubble {
+    width: 300px;
+    background: #DDD;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+}
+
+.sidebar {
+    background: #23d0a5;
+    vertical-align: top;
+    padding-top: 0px;
+    min-height:100%;
+    min-width: 250px;
+    width: 250px;
+}
+
+.topbar {
+    display: none;
+    height: 80px;
+}
+
+.topbar td {
+    background: #23d0a5;
+}
+
+.logInOut {
+    text-align: right;
+    padding: 10px;
+    position:fixed;
+    width: 240px;
+
+}
+
+.navlink3 {
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.darshdeep {
+    opacity: 0.7;
+}
+
+.darshdeep:hover {
+    opacity: 1;
+}
+
+.navlink3:hover {
+    font-weight:;
+}
+
+#welcomeUser {
+    color: #fff;
+    float: left;
+    padding: 4px 15px;
+}
+
+.innerlog {
+    background: #20BB94;
+    text-align:center;
+    width: 65px;
+    padding: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+}
+
+.editButtn {
+    background: #20BB94;
+    text-align:center;
+    padding: 0 10px 0 10px;
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+.innerlog:hover {
+    background: #1CA684;
+}
+
+.alert {
+    max-width: 200px;
+}
+
+.karen {
+    margin-left: 25px;
+}
+
+.darshd {
+    margin: 10px 0 10px 0;
+}
+
+.logInOut a, .logInOut a:link, .logInOut a:visited, .logInOut a:active {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.sideContent {
+    margin-top: 100px;
+    position:fixed;
+}
+
+.allMyBuns {
+    padding: 0 40px 0 40px;
+    vertical-align: top;
+}
+
+.logo {
+    margin-left: 30px;
+}
+
+table {
+    padding: 0;
+    margin: 0;
+}
+
+.project a, .project a:link, .project a:visited, .project a:hover {
+    color: #000;
+    font-weight: 300;
+    text-decoration:none;
+}
+
+.projectName {
+    font-size: 52px;
+    font-weight:100;
+}
+
+.follow-project {
+    display: inline-block;
+}
+.followed svg.heart-icon path {
+    fill: #F63B30;
+    stroke: #8E221B;
+    stroke-width: 2px;
+}
+
+svg.heart-icon {
+    height: 40px;
+    width: 40px;
+}
+svg.heart-icon:hover {
+    cursor: pointer;
+}
+
+svg.heart-icon path {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2px;
+}
+
+.subButton {
+    background: #23d0a5;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: 300;
+    width: 100px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+.subButton:hover {
+    background: #1ebe98;
+}
+
+.buttonHolder {
+    text-align: right;
+}
+
+.projTable {
+    width: 100%;
+    height: 100%;
+}
+
+.navlink{
+    margin-left: 40px;
+    font-size: 16px;
+    height:18px;
+}
+
+.loginTop {
+    display: inline-block;
+    float: right;
+    margin-right: 15px;
+    margin-top: 5px;
+    color: #fff;
+}
+
+.navlink2{
+    font-size: 16px;
+}
+
+.active {
+    color:#575757;
+}
+
+.submitRow {
+    padding: 5px;
+}
+.mainArea {
+    padding: 20px;
+}
+#content {
+    height:100%;
+    width:100%;
+}
+.about {
+    padding: 50px 50px 0 50px;
+}
+
+.layer {
+    /*background-color: rgba(89, 187, 156, 0.75);*/
+    background-color: rgba(22, 136, 108, 0.75);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    padding: 10px 0 16px 0;
+}
+
+.wowLayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.layer2 {
+    width:100%;
+    height:100%;
+}
+
+.project {
+    text-align: center;
+    height: 375px;
+    margin: 20px 0 10px 0;
+}
+
+.projectTitle {
+    padding: 10px 10px 10px 0;
+    font-weight: bold;
+}
+
+.projLink, .projLink:link, .projLink:active, .projLink:visited {
+    color: #1aa181;
+    font-weight: 500;
+}
+
+.projLink:hover {
+    color: #23d0a5
+}
+
+.projectInfo {
+    padding: 10px;
+}
+
+
+.projectImages {
+    width: 100%;
+    overflow: scroll;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.carousel {
+    width: 500px;
+}
+
+.aboutPicsTabe {
+    height: 200px;
+}
+
+.tabespacer {
+    width: 40px;
+}
+
+.aboutTd {
+    padding:0;
+    min-width:200px;
+    height:200px;
+}
+
+.loginpage {
+    padding: 50px;
+}
+
+.addNew {
+    background: #ddd;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 150px;
+    font-weight: 100;
+    transition: background 0.5s, color 0.5s;
+    -webkit-transition: background 0.5s, color 0.5s;
+    color: #999;
+}
+
+.summaryTitle {
+    font-size: 40px;
+    font-weight: 200;
+}
+
+.addNew:hover {
+    background: #96dfc4;
+    color: #fff;
+}
+
+.projRow {
+    height: 50%;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+    perspective: 1000;
+    -webkit-perspective: 1000; /* Chrome, Safari, Opera */
+}
+    /* flip the pane when hovered */
+    .flip-container:hover .flipper, .flip-container.hover .flipper .back {
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg); /* Safari */
+    }
+
+    .flip-container:hover .flipper .flip-container.hover .flipper .front {
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+    }
+
+
+.flip-container, .front, .back {
+    width: 100%;
+    height: 100%;
+}
+
+/* flip speed goes here */
+.flipper {
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    /*transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.textCenter {
+    background: #fff;
+}
+.textCenterB {
+    background: #ddd;
+}
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
+}
+.aboutDesc {
+    color:#fff;
+    text-align:center;
+}
+.projName {
+    font-size: 24px;
+    font-weight: 300;
+    padding: 0 10px 0 10px;
+}
+
+.uniName {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.clickbl {
+    cursor: pointer;
+    margin-bottom: 3px;
+}
+
+.clickbl:hover {
+    opacity: 0.9;
+}
+
+.whiteFont {
+    color:white;
+}
+
+.sumContent {
+    margin:35px;
+    overflow: hidden;
+    font-size: 16px;
+    max-height: 315px;
+    text-align:center;
+}
+
+.aboutPic {
+    text-align:center;
+}
+.personName {
+    margin-top:72%;
+    color: #fff;
+    font-weight: 300;
+    font-size: 20px;
+    line-height:18px;
+}
+.personTitle {
+    color:#fff;
+    font-weight: 200;
+}
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(-180deg);
+    -webkit-transform: rotateY(-180deg);
+}
+
+.heading {
+    font-size:36px;
+    color: #646464;
+    font-weight: 200;
+}
+
+.subHeading {
+    font-size: 18px;
+    color: #646464;
+    font-weight: 100;
+}
+
+.textBlock {
+    background: #DDD;
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 10px;
+    max-width: 800px;
+    font-weight: 300;
+}
+
+.submit {
+    vertical-align: top;
+    padding: 100px 0 0 70px;
+}
+
+ul .flashes {
+    list-style: none;
+}
+
+.ui-autocomplete {
+    list-style: None;
+    color: #ffffff;
+    background-color: #36C88E; /*#EBEBEB;*/
+    max-width: 300px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 0;
+}
+
+.ui-menu-item {
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.ui-menu-item:hover {
+    cursor: pointer;
+    background-color: #28956B;
+}
+
+.searchBub {
+    height: 30px;
+    font-size: 12px;
+    padding: 0 10px 0 10px;
+    width: 300px;
+    background: #DDD;
+    border: none;
+    border-radius: 5px;
+    line-height: 30px;
+}
+
+.searchBub:focus {
+    background: #fff;
+}
+
+.activeLink {
+    color: #25876F;
+}
+
+.activeLink:hover {
+    color: #25876F;
+}
+
+.action-text-icon {
+    color: #9B9B9B;
+}
+
+.action-text-icon:hover {
+    color: #F42C2C;
+    cursor: pointer;
+}
+
+.plus-button {
+    border: 0px;
+    background: #23d0a5;
+    font-size: 14px;
+    padding:0 7px 0 7px;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.plus-button:hover {
+    background: #1ebe98;
+}
+.plus-button:active {
+    background-color: #B3B3B3;
+}
+
+.image-holder {
+    position: relative;
+    display: inline-block;
+}
+.image-delete {
+    z-index: 99;
+    padding: 2px 8px;
+    position: absolute;
+    bottom: 4px;
+    right: 2px;
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+}
+.image-delete:hover {
+    color: #FF6F6B;
+    cursor: pointer;
+}
+
+svg.star-icon {
+    padding-top: 1px;
+    width: 20px;
+    height: 20px;
+    stroke: white;
+}
+svg.star-icon path {
+    stroke: white;
+    stroke-width: 3px;
+}
+
+.set-project-image {
+    border-radius: 50px;
+    z-index: 99;
+    padding: 2px 4px;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    color: white;
+}
+.selected svg.star-icon path {
+    fill: yellow;
+    stroke: yellow;
+}
+.set-project-image:hover {
+    color: #00A500;
+    cursor: pointer;
+}
+
+.snail {
+    font-size: 20px;
+}
+
+.user-info {
+    padding-left: 20px;
+}
+
+.user-name {
+    font-size: 32px;
+}
+
+.user-school {
+    font-size: 12px;
+}
+
+.user-contact a {
+    color: #23d0a5;
+}
+.user-contact a:hover {
+    color: #23d0a5;
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+.user-info-footer {
+    margin-top: 20px;
+}
+.followers {
+    font-size: 10px;
+    color: #BCBDC5;
+}
+
+.user-about {
+    margin-top: 25px;
+}
+
+.projects {
+    max-width: 80%;
+    margin-top: 25px;
+}
+
+.projects-title {
+    background-color: #23d0a5;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.projects-list {
+    background-color: #ddd;
+    text-align: center;
+    height: 100px;
+    padding-top: 25px;
+}
+
+.news-feed-container {
+    margin-top: 25px;
+}
+
+#welcomeUser a:hover {
+    text-decoration: underline;
+}
+
+.projectInfoTable td {
+    vertical-align: top;
+}
