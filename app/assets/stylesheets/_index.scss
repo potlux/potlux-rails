@@ -1,41 +1,59 @@
 @import "bootstrap.scss";
 
+$background-grey: #EFEFEF;
+
 $potlux-light-grey: #dddddd;
 
 .container {
-    margin-left: 250px;
+    background-color: $background-grey;
+    height: 100%;
+    width: 100%;
 
-    .projects-container {
-        @include make-row();
+    @media(min-width: $screen-sm-min) {
+        position: absolute;
+        left: 200px;
+        display: table;
+    }
 
-        .card-container {
-            @include make-sm-column(4, 0px);
-
-            a {
-                max-width: 320px;
-                display: block;
-                background-color: $potlux-light-grey;
-            }
-
-            .new-project-card {
-                font-size: 150px;
-                font-weight: 100;
-                height: 375px;
-                line-height: 150px;
-
-                .middle {
-                    text-align: center;
-                    margin-top: 120px;
-                }
-            }
-
-            &.project {
-
-                .front {
-                    background-size:cover;
-                    background-position: center;
-                }
-            }
-        }
+    @media(min-width: $screen-md-min) {
+        left: 300px;
     }
 }
+
+// .container {
+//     margin-left: 250px;
+
+//     .projects-container {
+//         @include make-row();
+
+//         .card-container {
+//             @include make-sm-column(4, 0px);
+
+//             a {
+//                 max-width: 320px;
+//                 display: block;
+//                 background-color: $potlux-light-grey;
+//             }
+
+//             .new-project-card {
+//                 font-size: 150px;
+//                 font-weight: 100;
+//                 height: 375px;
+//                 line-height: 150px;
+
+//                 .middle {
+//                     text-align: center;
+//                     margin-top: 120px;
+//                 }
+//             }
+
+//             &.project {
+
+//                 .front {
+//                     background-size:cover;
+//                     background-position: center;
+//                 }
+//             }
+//         }
+//     }
+// }

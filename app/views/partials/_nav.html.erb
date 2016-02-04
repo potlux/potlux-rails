@@ -1,18 +1,24 @@
-<div class="nav-container">
+<div class="nav-container" data-activated="hamburger">
     <div class="login-container">
         <div class="login-link"><a href="#">Login</a></div>
     </div>
 
     <%= render "partials/flash", messages: [] %>
 
-    <div class="logo-container"><%= image_tag("potlux-sidebar.png") %></div>
+    <div class="logo-container"></div>
 
-    <div class="nav-menu-container">
+    <div class="nav-menu-container" data-activated="hamburger">
         <ul>
-            <li class="nav-item"><a href="#">Home</a></li>
-            <li class="nav-item"><a href="#">About</a></li>
-            <li class="nav-item"><a href="#">Submit</a></li>
-            <li class="nav-item"><a href="#">Contact</a></li>
+            <a href="/"><li class="nav-item">Home</li></a>
+            <a href="/about"><li class="nav-item">About</li></a>
+            <a href="/submit"><li class="nav-item">Submit</li></a>
+            <a href="/contact"><li class="nav-item">Contact</li></a>
         </ul>
+    </div>
+
+    <div class="hamburger-container" data-activator="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
 </div>

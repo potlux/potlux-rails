@@ -14,3 +14,16 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+$(function() {
+	$("[data-activator]").each(function(idx, activator_el) {
+		$(activator_el).click(function() {
+			console.log("clicked");
+			var activatorKey = $(this).data("activator");
+
+			$('[data-activated="'+activatorKey+'"]').each(function(idx, activated_el) {
+				$(activated_el).toggleClass("active");
+			});
+		});
+	});
+});
